@@ -1,0 +1,203 @@
+.grid{
+  display: grid;
+  grid-gap : 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+Image {
+  max-width: 1px
+}
+.hoover {
+  max-width:79px;
+  padding-left: 23px;
+}
+
+.compass {
+  max-width:109px;
+  padding-left: 230px;
+}
+
+.text {
+  font-size: 20px;
+  color: rgb(235, 29, 29);
+  padding-left: 22px;
+}
+.board{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  position: relative;
+  /* background-color:rgb(188, 188, 188); */
+  font-size: 7px;
+  /* size: 100px; */
+  width: auto;
+  height: auto;
+  /* outline: 50px; */
+  /* transform: rotate(-90deg); */
+}
+#tile{
+  width: 10%;
+  height: 10%;
+}
+
+#app{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  vertical-align: center;
+  place-content: center;
+  height: 10%;
+  font-size: 20px;
+}
+
+.row{
+  height: 50px;
+}
+
+
+.cell{
+  text-align: center;
+  vertical-align: center;
+  color:rgba(0, 0, 0,0.3);
+  font-size: 10px;
+  font-weight: bold;
+  /* align-self: center; */
+  width: 10%;
+  height: 10%;
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+.vacuum-cellN{
+  content: '';
+  background-image: url(../components/vacN.png);
+  background-size: 90%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellS{
+  content: '';
+  background-image: url(../components/vacS.png);
+  background-size: 90%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellW{
+  content: '';
+  background-image: url(../components/vacW.png);
+  background-size: 90%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellE{
+  content: '';
+  background-image: url(../components/vacE.png);
+  background-size: 90%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+
+.cell{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  outline: 1px solid rgb(212, 206, 206);
+  display: inline-block;
+}
+
+
+#game{
+}
+
+.style-main{
+  font-family: serif;
+}
+
+body{
+  display : flex;
+  justify-content : center;
+  height: 100vh;
+  background-color:rgb(249, 249, 249);
+
+}
+
+
+/* .vacuum-cellN{
+  content: '';
+  background-image: url(../components/vacN.png);
+  background-size: 90%;
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellS{
+  content: '';
+  background-image: url(../components/vacS.png);
+  background-size: 90%;
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellW{
+  content: '';
+  background-image: url(../components/vacW.png);
+  background-size: 90%;
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+}
+.vacuum-cellE{
+  content: '';
+  background-image: url(../components/vacE.png);
+  background-size: 90%;
+  width: 10%;
+  height: 10%;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+
+} */
