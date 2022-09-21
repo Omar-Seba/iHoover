@@ -73,7 +73,7 @@ Image {
 
 .vacuum-cellN{
   content: '';
-  background-image: url(../components/vacN.png);
+  background-image: url(../components/vacNN.png);
   background-size: 90%;
   width: 40px;
   height: 40px;
@@ -86,7 +86,7 @@ Image {
 }
 .vacuum-cellS{
   content: '';
-  background-image: url(../components/vacS.png);
+  background-image: url(../components/vacSS.png);
   background-size: 90%;
   width: 40px;
   height: 40px;
@@ -99,7 +99,7 @@ Image {
 }
 .vacuum-cellW{
   content: '';
-  background-image: url(../components/vacW.png);
+  background-image: url(../components/vacWW.png);
   background-size: 90%;
   width: 40px;
   height: 40px;
@@ -112,7 +112,7 @@ Image {
 }
 .vacuum-cellE{
   content: '';
-  background-image: url(../components/vacE.png);
+  background-image: url(../components/vacEE.png);
   background-size: 90%;
   width: 40px;
   height: 40px;
