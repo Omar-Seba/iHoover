@@ -19,15 +19,15 @@ const Board = () => {
     // }
     // while(instructions === ""){
         // window.alert("type the instructions")!
-        instructions = "DADADADAA"
+        instructions = "DDDADADADA"// "DADADADAA"
     // }
 
     // #TODO check the validity of the values
 
 
-    const initalXPos : number = 5 //parseInt(prompt("enter x pos")!)
-    const initalYPos : number =  5 //parseInt(prompt("enter y pos")!)
-    const orientation : string = "N" //prompt("enter orientation")!
+    const initalXPos : number = 0 //parseInt(prompt("enter x pos")!)
+    const initalYPos : number =  0 //parseInt(prompt("enter y pos")!)
+    const orientation : string = "S" //prompt("enter orientation")!
 
     let vacuum = new vacuumObject(initalXPos, initalYPos, orientation, boardSizeX);
 
@@ -47,15 +47,15 @@ const Board = () => {
     let boardRender = [];
 //  board.slice(0).reverse().map((row, rowIdx) => (
     // for (let i = board.length - 1; i >= 0; i--) {
-    for (let i = 0 ; i < board.length ; i++) {
-        for (let j = 0; j < board[i].length; j++) {
-            if (board[i][j] === 1)
-                boardRender.push(<span className={vacuum.image}></span>)
-            else
-                boardRender.push(<span className="cell"></span>)
-        }
+    // for (let i = 0 ; i < board.length ; i++) {
+    //     for (let j = 0; j < board[i].length; j++) {
+    //         if (board[i][j] === 1)
+    //             boardRender.push(<span className={vacuum.image}></span>)
+    //         else
+    //             boardRender.push(<span className="cell"></span>)
+    //     }
         
-    }
+    // }
 
     // const exec = () => {
     board = vacuum.execInstructions(instructions, board);
@@ -71,8 +71,8 @@ const Board = () => {
                             row.map((cell, cellIdx) => (
                                 <div
                                     key={cellIdx}
-                                    className={`cell ${(rowIdx === vacuum.xPos && cellIdx === vacuum.yPos) ?
-                                        vacuum.image : ''}`}> {rowIdx},{cellIdx}
+                                    className={`cell ${(cell ===  1) ?
+                                        vacuum.image : ''}`}> {board.indexOf(row)},{cellIdx}
                                 </div>
                             ))
                         }

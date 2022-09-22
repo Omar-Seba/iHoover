@@ -52,18 +52,18 @@ class vacuumObject {
                     console.log("can't move W")
                 break;
 
-            case "S":
+            case "N":
                 if (this.xPos + 1 < this.boardSize)
                     this.xPos += 1;
                 else
-                    console.log("can't move S")
+                    console.log("can't move N")
                 break;
 
-            case "N":
+            case "S":
                 if (this.xPos - 1 >= 0)
                     this.xPos -= 1;
                 else
-                    console.log("can't move N")
+                    console.log("can't move S")
                 break;
 
             case "E":
